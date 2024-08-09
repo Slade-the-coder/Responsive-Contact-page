@@ -1,0 +1,17 @@
+body {
+    background-image: url(bg-image.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: white;
+    font-family: Be Vietnam Pro;
+    position: relative;
+    text-align: center;
+}
+
+span.head {
+    font-weight: bold;
+}
