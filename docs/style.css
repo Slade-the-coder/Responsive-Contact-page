@@ -20,5 +20,10 @@ p {
 }
 
 span.head {
+    font-size: 64px;
     font-weight: bold;
+}
+
+span.instruction {
+    font-size: 32px;
 }
