@@ -5,9 +5,16 @@ body {
     background-repeat: no-repeat;
 }
 
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("BeVietnamPro-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 p {
     color: white;
-    font-family: Be Vietnam Pro;
+    font-family: "Be Vietnam Pro";
     position: relative;
     text-align: center;
 }
