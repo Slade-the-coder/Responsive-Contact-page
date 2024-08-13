@@ -1,17 +1,23 @@
-body {
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     background-image: url(bg-image.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .icon {
     background-image: url(contact-form-icon.svg);
     position: relative;
     top: 0;
-    left:0;
-    width: 150px;
-    height: 50px;   
+    left: 80px;
+    border: 2px solid red;
+    width: 105px;
+    height: 35px;   
     background-repeat: no-repeat; 
 }
 
@@ -27,7 +33,7 @@ p {
     font-family: "Be Vietnam Pro";
     text-align: center;
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 
 span.head {
@@ -39,4 +45,39 @@ span.head {
 
 span.instruction {
     font-size: 32px;
+    width: 700px;
+    display: inline-block;
+}
+
+.form-area {
+    position: relative;
+    top: 100px;
+    width: 80%;
+    height: 700px;
+    border-radius: 20px;
+    background-color: #cdd5e049;
+    margin: 0 auto;  
+}
+
+.name {
+    position: relative;
+    bottom: 550px;
+    left: 100px;
+}
+
+label {
+    font-family: "Be Vietnam Pro";
+    font-size: 14px;
+    color: #F8FAFC;
+}
+
+input {
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    right: 43px;
+    height: 60px;
+    padding: 20px;
+    border: 0;
+    font-weight: bold;
 }
