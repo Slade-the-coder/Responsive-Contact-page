@@ -12,12 +12,13 @@ body, html {
 
 .icon {
     background-image: url(contact-form-icon.svg);
+    background-size: contain;
     position: relative;
-    top: 0;
-    left: 80px;
+    top: 1.5%;
+    left: 4%;
     border: 2px solid red;
-    width: 105px;
-    height: 35px;   
+    width: 200px;
+    height: 100px;   
     background-repeat: no-repeat; 
 }
 
@@ -37,24 +38,26 @@ p {
 }
 
 span.head {
-    font-size: 64px;
+    font-size: 4rem;
     width: 600px;
     font-weight: bold;
     display: inline-block;
+    border: 5px solid red;
 }
 
 span.instruction {
-    font-size: 32px;
+    font-size: 2rem;
     width: 700px;
     display: inline-block;
+    border: 5px solid red;
 }
 
 .form-area {
     position: relative;
     top: 100px;
-    width: 80%;
-    height: 700px;
-    border-radius: 20px;
+    width: 90%;
+    height: 75%;
+    border-radius: 50px;
     background-color: #cdd5e049;
     margin: 0 auto;  
 }
@@ -67,7 +70,7 @@ span.instruction {
 
 label {
     font-family: "Be Vietnam Pro";
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #F8FAFC;
 }
 
