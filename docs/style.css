@@ -8,6 +8,9 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;            
+    align-items: center; /* horizontal*/
+    flex-direction: column;
 }
 
 .icon {
@@ -15,7 +18,7 @@ body, html {
     background-size: contain;
     position: relative;
     top: 1.5%;
-    left: 4%;
+    right: 35%;
     border: 2px solid red;
     width: 200px;
     height: 100px;   
@@ -39,7 +42,7 @@ p {
 
 span.head {
     font-size: 4rem;
-    width: 600px;
+    width: 80%;
     font-weight: bold;
     display: inline-block;
     border: 5px solid red;
@@ -47,7 +50,7 @@ span.head {
 
 span.instruction {
     font-size: 2rem;
-    width: 700px;
+    width: 60%;
     display: inline-block;
     border: 5px solid red;
 }
@@ -64,13 +67,12 @@ span.instruction {
 
 .name {
     position: relative;
-    bottom: 550px;
-    left: 100px;
+    bottom: 1200%;
 }
 
 label {
     font-family: "Be Vietnam Pro";
-    font-size: 0.875rem;
+    font-size: 2rem;
     color: #F8FAFC;
 }
 
@@ -80,7 +82,9 @@ input {
     top: 40px;
     right: 43px;
     height: 60px;
+    width: 100%;
     padding: 20px;
+    font-size: 2em;
     border: 0;
     font-weight: bold;
 }
