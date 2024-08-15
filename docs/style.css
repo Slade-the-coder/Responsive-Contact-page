@@ -8,7 +8,24 @@ body, html {
     padding: 0;
 }
 
+@font-face {
+    font-family: "BeVietnamPro";
+    src: url("BeVietnamPro-Regular.ttf") format("truetype") ;
+    font-weight: normal;
+    font-style: normal;
+}
+
 p {
     color: #F8FAFC;
-    
+    font-family: "BeVietnamPro";
+    text-align: center;
+}
+
+.head {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.instruction {
+    font-size: 1rem;
 }
