@@ -3,6 +3,18 @@
     padding: 0;
 } 
 
+.icon {
+    background-image: url(contact-form-icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 3px solid red; */
+    width: 75px;
+    height: 20px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
 .bg-svg {
     background-image: url(bg-image.svg);
     background-repeat: no-repeat;
@@ -25,12 +37,14 @@ p {
     color: #FFFFFF;
     font-family: "BeVietnamPro";
     text-align: center;
+    position: relative;
+    top: 40px;
 }
 
 span.head {
     font-size: 2rem;
     font-weight: bold;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 300px;
     height: 82px;
     display: inline-block;
@@ -38,4 +52,18 @@ span.head {
 
 span.instruction {
     font-size: 1rem;
+    /* border: 3px solid red; */
+    display: inline-block;
+    width: 350px;
+    height: 40px;
+}
+
+.form-area {
+    background-color: #cdd5e06a;
+    position: relative;
+    top: 70px;
+    margin: auto;
+    width: 90%;
+    height: 60%;
+    border-radius: 20px;
 }
