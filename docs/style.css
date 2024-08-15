@@ -1,0 +1,14 @@
+body, html {
+    background-image: url(bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #F8FAFC;
+    
+}
