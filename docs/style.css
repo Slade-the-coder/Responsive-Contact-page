@@ -10,8 +10,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     /* border: 3px solid red; */
-    width: 75px;
-    height: 20px;
+    width: 160px;
+    height: 21px;
     position: relative;
     left: 5%;
     top: 2%;
@@ -23,9 +23,9 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    position: relative;
     width: 100%;
     height: 100%;
+    overflow: scroll;
 }
 
 @font-face {
@@ -44,9 +44,9 @@ p {
 }
 
 span.head {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 300px;
     height: 82px;
     display: inline-block;
@@ -65,8 +65,13 @@ span.instruction {
     position: relative;
     margin: auto;
     top: 10%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     width: 90%;
-    height: 60%;
+    height: 70%;
     border-radius: 20px;
+}
+
+.space-beneath {
+    width: 100%;
+    height: 15%;
 }
