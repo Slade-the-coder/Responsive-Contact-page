@@ -1,8 +1,9 @@
- body, html {
+body, html {
     margin: 0;
     padding: 0;
     font-size: 16px;
     height: 100%;
+    font-family: "BeVietnamPro";
 } 
 
 .icon {
@@ -13,8 +14,8 @@
     width: 160px;
     height: 21px;
     position: relative;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-left: 19px;
+    margin-top: 19px;
 }
 
 .bg-svg {
@@ -37,7 +38,6 @@
 
 p {
     color: #FFFFFF;
-    font-family: "BeVietnamPro";
     text-align: center;
 }
 
@@ -48,31 +48,91 @@ span.head {
     width: 300px;
     height: 82px;
     display: inline-block;
-    margin-top: 2%;
+    margin-top: 8px;
 }
 
 span.instruction {
-    font-size: 1rem;
+    font-size: 0.85rem;
     /* border: 3px solid red; */
     display: inline-block;
-    width: 350px;
+    width: 300px;
     height: 40px;
-    margin-top: -2%;
+    margin-top: -8px;
 }
 
 .form-area {
     background-color: #cdd5e06a;
     position: relative;
     margin: auto;
-    /* margin-bottom: 50px; */
-    width: 90%;
-    height: 67%;
+    width: 92%;
+    height: 565px;
     border-radius: 20px;
-    margin-top: 12%;
+    margin-top: 50px;
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+    text-align: left;
+}
+
+.name {
+    position: relative;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+    margin: auto;
+    width: 85%;
+    bottom: -30px;
+    margin-bottom: 20px;
+}
+
+:placeholder-shown {
+    color: #8b919a;
+}
+
+#name-input {
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    background-color: #F8FAFC;
+    font-family: "BeVietnamPro";
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.email {
+    position: relative;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+    margin: auto;
+    width: 85%;
+    bottom: -30px;
+}
+
+#email-input {
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    background-color: #F8FAFC;
+    font-family: "BeVietnamPro";
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .space-beneath {
     width: 100%;
-    height: 4%;
+    height: 34px;
     position: relative;
 }
