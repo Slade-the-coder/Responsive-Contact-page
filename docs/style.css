@@ -86,7 +86,7 @@ label {
     margin-bottom: 20px;
 }
 
-:placeholder-shown {
+input::placeholder {
     color: #8b919a;
 }
 
