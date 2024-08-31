@@ -31,7 +31,14 @@ body, html {
 
 @font-face {
     font-family: "BeVietnamPro";
-    src: url("BeVietnamPro-Regular.ttf") format("truetype") ;
+    src: url("Be_Vietnam_Pro/BeVietnamPro-Regular.ttf") format("truetype") ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BeVietnamPro-SemiBold";
+    src: url("Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf") format("truetype") ;
     font-weight: normal;
     font-style: normal;
 }
@@ -42,8 +49,9 @@ p {
 }
 
 span.head {
+    font-family: "BeVietnamPro-SemiBold";
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 10px;
     /* border: 3px solid red; */
     width: 300px;
     height: 82px;
@@ -76,6 +84,11 @@ label {
     text-align: left;
 }
 
+input {
+    margin-bottom: 20px;
+
+}
+
 .name {
     position: relative;
     font-size: 0.7rem;
@@ -83,10 +96,9 @@ label {
     margin: auto;
     width: 85%;
     bottom: -30px;
-    margin-bottom: 20px;
 }
 
-input::placeholder {
+#name-input::placeholder, #email-input::placeholder {
     color: #8b919a;
 }
 
@@ -116,6 +128,81 @@ input::placeholder {
 }
 
 #email-input {
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    background-color: #F8FAFC;
+    font-family: "BeVietnamPro";
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.size {
+    position: relative;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+    margin: auto;
+    width: 85%;
+    bottom: -30px;
+}
+
+#size-input {
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    background-color: #F8FAFC;
+    font-family: "BeVietnamPro";
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.subject {
+    position: relative;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+    margin: auto;
+    width: 85%;
+    bottom: -30px;
+}
+
+#subject-input {
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    background-color: #F8FAFC;
+    font-family: "BeVietnamPro";
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.message {
+    position: relative;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+    margin: auto;
+    width: 85%;
+    bottom: -30px;
+}
+
+#message-input {
     position: relative;
     padding: 10px;
     padding-left: 20px;
