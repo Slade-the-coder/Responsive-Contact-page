@@ -173,6 +173,10 @@ input {
     font-family: "BeVietnamPro";
     display: inline-block;
     box-sizing: border-box;
+    background-image: url(Expand_down.svg);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: 95%;
 }
 
 .subject {
@@ -198,6 +202,10 @@ input {
     font-family: "BeVietnamPro";
     display: inline-block;
     box-sizing: border-box;
+    background-image: url(Expand_down.svg);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: 95%;
 }
 
 .message {
@@ -241,7 +249,6 @@ input {
     font-size: 0.8rem;
     font-family: "BeVietnamPro-Bold";
     color: #4036A9;
-    
 }
 
 .space-beneath {
@@ -251,9 +258,6 @@ input {
 }
 
 @media (min-width: 768px){
-    .bg-svg {
-        background-color: red;
-    }
 
     .name {
         margin-left: 7.5%;
@@ -290,6 +294,7 @@ input {
 
     .form-area {
         height: 460px;
+        max-width: 707px;
     }
 
     form {
@@ -297,8 +302,20 @@ input {
     }
 }
 
-@media (min-width: 768px) {
-    .form-area {
-        max-width: 700px;
+@media (min-width: 1024px){
+    .icon{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    span.head {
+        
+        font-size: 3rem;
+        width: 450px;
+    }
+
+    span.instruction {
+        font-size: 1.5rem;
+        width: 500px;
+        margin-top: 7px;
     }
 }
