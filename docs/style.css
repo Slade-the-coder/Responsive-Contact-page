@@ -16,6 +16,7 @@ body, html {
     position: relative;
     margin-left: 19px;
     margin-top: 19px;
+    transition: margin-left 2s ease, margin-top 2s ease;
 }
 
 .bg-svg {
@@ -64,6 +65,7 @@ span.head {
     height: 82px;
     display: inline-block;
     margin-top: 8px;
+    transition: font-size 2s ease, width 2s ease;
 }
 
 span.instruction {
@@ -73,6 +75,7 @@ span.instruction {
     width: 300px;
     height: 40px;
     margin-top: -8px;
+    transition: font-size 2s ease, width 2s ease, margin-top 2s ease;
 }
 
 .form-area {
@@ -83,6 +86,7 @@ span.instruction {
     height: 700px;
     border-radius: 15px;
     margin-top: 50px;
+    transition: height 2s ease;
 }
 
 label {
@@ -215,6 +219,7 @@ input {
     margin: auto;
     width: 85%;
     bottom: -30px;
+    transition:  top 2s ease;
 }
 
 #message-input {
@@ -255,63 +260,6 @@ input {
     width: 100%;
     height: 34px;
     position: relative;
-}
-
-@keyframes moveIcon {
-    from {
-        margin-left: 19px;
-        margin-top: 19px;
-    }
-
-    to { 
-        margin-left: 50px;
-        margin-top: 10px;
-    }
-}
-
-@keyframes growheadText {
-    from {
-      font-size: 2rem;
-    }
-    to {
-      font-size: 3rem;
-    }
-}
-
-@keyframes shrinkheadText {
-    from {
-      font-size: 3rem;
-    }
-    to {
-      font-size: 2rem;
-    }
-}
-
-@keyframes growinstructText {
-    from {
-        font-size: 0.85rem;
-    }
-    to {
-        font-size: 1.5rem;
-    }
-}
-
-@keyframes shrinkinstructText {
-    from {
-        font-size: 1.5rem;
-    }
-    to {
-        font-size: 0.85rem;
-    }
-}
-
-@keyframes shrinkmargin {
-    from {
-        margin-top: 7px;
-    }
-    to {
-        margin-top: 0px;
-    }
 }
 
 @media (min-width: 768px){
@@ -359,28 +307,20 @@ input {
     }
 }
 
-@media (max-width: 1024px){
-    span.head {
-        animation: shrinkheadText 2s forwards;
-    }
-
-    span.instruction {
-        animation: shrinkinstructText 2s forwards, shrinkmargin 2s forwards;
-    }
-}
-
 @media (min-width: 1024px){
     .icon {
-        animation: moveIcon 2s forwards;
+        margin-left: 50px;
+        margin-top: 10px;
     }
+
     span.head {
+        font-size: 3rem;
         width: 450px;
-        animation: growheadText 2s forwards;
     }
 
     span.instruction {
+        font-size: 1.5rem;
         width: 500px;
         margin-top: 7px;
-        animation: growinstructText 2s forwards;
     }
 }

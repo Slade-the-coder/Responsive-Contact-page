@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body, html {
-            padding: 0px;
-            margin: 0px;
-            overflow: scroll;
-            height: 100%;
-        }
-        p {
-            position: relative;
-            text-align: center;
-            font-size: clamp(2rem, 2.5vw, 3rem);
-            
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Default styling for the div */
+    .animated-div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: transform 1s ease, background-color 1s ease;
+    }
+
+    /* Grow and change color when the viewport is larger than 1024px */
+    @media (min-width: 1024px) {
+      .animated-div {
+        transform: scale(1.5);
+        background-color: blue;
+      }
+    }
+    
+    /* Shrink back and revert color when the viewport is smaller than 1024px */
+    @media (max-width: 1024px) {
+      .animated-div {
+        transform: scale(1);
+        background-color: red;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>Hello</p>
+
+  <div class="animated-div"></div>
+
 </body>
 </html>
