@@ -175,12 +175,60 @@ input {
     height: 50px;
     background-color: #F8FAFC;
     font-family: "BeVietnamPro";
+    text-align: left;
     display: inline-block;
     box-sizing: border-box;
-    background-image: url(Expand_down.svg);
+    cursor: pointer;
+}
+
+img.ex-down-1 {
     background-repeat: no-repeat;
-    background-size: 21px;
-    background-position: 95%;
+    width: 21px;
+    position: absolute;
+    right: 5%;
+    bottom: 35%;
+}
+
+.size a{
+    display: block;
+    color: black;
+    font-size: 0.7rem;
+    background-color: #F8FAFC;
+    font-family: "BeVietnamPro";
+    text-decoration: none;
+    padding: 7.5px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#first1 {
+    padding-top: 0;
+}
+
+#last1 {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 15px;
+}
+
+.size .content{
+    display: none;
+    position: absolute;
+    top: 67px; 
+    z-index: 1;
+    width: 100%;
+}
+
+.size:hover #size-input{
+    border-radius: 10px 10px 0 0;
+}
+
+.size:hover img.ex-down-1{
+    display: block;
+    transform: rotate(180deg);
+}
+
+.size:hover .content{
+    display: block;
 }
 
 .subject {
@@ -206,10 +254,56 @@ input {
     font-family: "BeVietnamPro";
     display: inline-block;
     box-sizing: border-box;
-    background-image: url(Expand_down.svg);
+}
+
+img.ex-down-2 {
     background-repeat: no-repeat;
-    background-size: 21px;
-    background-position: 95%;
+    width: 21px;
+    position: absolute;
+    right: 5%;
+    bottom: 35%;
+}
+
+.subject a{
+    display: block;
+    color: black;
+    font-size: 0.7rem;
+    background-color: #F8FAFC;
+    font-family: "BeVietnamPro";
+    text-decoration: none;
+    padding: 7.5px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#first2 {
+    padding-top: 0;
+}
+
+#last2 {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 15px;
+}
+
+.subject .content{
+    display: none;
+    position: absolute;
+    top: 67px; 
+    z-index: 1;
+    width: 100%;
+}
+
+.subject:hover #subject-input{
+    border-radius: 10px 10px 0 0;
+}
+
+.subject:hover img.ex-down-2{
+    display: block;
+    transform: rotate(180deg);
+}
+
+.subject:hover .content{
+    display: block;
 }
 
 .message {
@@ -254,6 +348,7 @@ input {
     font-size: 0.8rem;
     font-family: "BeVietnamPro-Bold";
     color: #4036A9;
+    cursor: pointer;
 }
 
 .space-beneath {
