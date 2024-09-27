@@ -216,14 +216,13 @@ img.ex-down-1 {
     top: 67px; 
     z-index: 1;
     width: 100%;
-    box-shadow: 3px 4px 3px hsla(0, 0%, 0%, 0.578);
+    box-shadow: 3px 4px 3px hsla(0, 0%, 0%, 0.266);
     border-radius: 0 0 10px 10px;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .size:hover #size-input{
     border-radius: 10px 10px 0 0;
-    box-shadow: 3px 2px 3px hsla(0, 0%, 0%, 0.578);
+    box-shadow: 3px 2px 3px hsla(0, 0%, 0%, 0.266);
 }
 
 .size:hover img.ex-down-1{
@@ -259,6 +258,7 @@ img.ex-down-1 {
     display: inline-block;
     box-sizing: border-box;
     text-align: left;
+    cursor: pointer;
 }
 
 img.ex-down-2 {
@@ -297,12 +297,12 @@ img.ex-down-2 {
     z-index: 1;
     width: 100%;
     border-radius: 0 0 10px 10px;
-    box-shadow: 3px 4px 3px hsla(0, 0%, 0%, 0.578);
+    box-shadow: 3px 4px 3px hsla(0, 0%, 0%, 0.266);
 }
 
 .subject:hover #subject-input{
     border-radius: 10px 10px 0 0;
-    box-shadow: 3px 2px 3px hsla(0, 0%, 0%, 0.578);
+    box-shadow: 3px 2px 3px hsla(0, 0%, 0%, 0.266);
 }
 
 .subject:hover img.ex-down-2{

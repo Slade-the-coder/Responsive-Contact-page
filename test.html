@@ -4,34 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Default styling for the div */
-    .animated-div {
-      width: 100px;
-      height: 100px;
-      background-color: red;
-      transition: transform 1s ease, background-color 1s ease;
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
     }
 
-    /* Grow and change color when the viewport is larger than 1024px */
-    @media (min-width: 1024px) {
-      .animated-div {
-        transform: scale(1.5);
-        background-color: blue;
-      }
+    nav {
+      position: relative;
+      width: 200px;
+      background-color: #333;
+      color: white;
+      padding: 10px;
     }
-    
-    /* Shrink back and revert color when the viewport is smaller than 1024px */
-    @media (max-width: 1024px) {
-      .animated-div {
-        transform: scale(1);
-        background-color: red;
-      }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    /* Dropdown container initially hidden */
+    .dropdown {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-20px); /* Start slightly above */
+      transition: all 0.5s ease;
+    }
+
+    /* Trigger area hover reveals the dropdown */
+    nav:hover .dropdown {
+      max-height: 200px; /* Adjust based on content */
+      opacity: 1;
+      transform: translateY(0); /* Animate down into view */
     }
   </style>
 </head>
 <body>
 
-  <div class="animated-div"></div>
+  <nav>
+    <a href="#">Menu Item 1</a>
+    <a href="#">Menu Item 2</a>
+    <a href="#">Menu Item 3</a>
+
+    <!-- Dropdown content -->
+    <div class="dropdown">
+      <a href="#">Submenu 1</a>
+      <a href="#">Submenu 2</a>
+      <a href="#">Submenu 3</a>
+    </div>
+  </nav>
 
 </body>
 </html>
